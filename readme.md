@@ -43,7 +43,7 @@ Sum of multiples of 3 and 5:
 
 ---
 
-I couldn't find a solution without coding. So, my accepted solution is [sum\_even\_fibo](sum_even_fibo.py).
+I couldn't find a solution without coding. So, my accepted solution is [sum\_even\_fibo](src/sum_even_fibo.py).
 
 ---
 
@@ -61,7 +61,7 @@ I couldn't find a solution without coding. So, my accepted solution is [sum\_eve
 
 ---
 
-I use trial division, i.e. simply divide the input number by prime factors. Checking prime divisor is unnecessary because the smallest divisor is 2 and all multiples of 2 are then masked out. The next remaining divisor 3 is for sure a prime and so on. My less-than-1s solution is [largest\_prime\_factor](largest_prime_factor.py).
+I use trial division, i.e. simply divide the input number by prime factors. Checking prime divisor is unnecessary because the smallest divisor is 2 and all multiples of 2 are then masked out. The next remaining divisor 3 is for sure a prime and so on. My less-than-1s solution is [largest\_prime\_factor](src/largest_prime_factor.py).
 
 ---
 
@@ -174,7 +174,7 @@ Sum of square $(1^2 + 2^2 + ... + N^2) = \frac{N(N+1)(2N+1)}{6}$
 
 ---
 
-My less-than-1s solution is [nth\_prime](nth_prime.py).
+My less-than-1s solution is [nth\_prime](src/nth_prime.py).
 
 --- 
 
