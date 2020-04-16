@@ -1,7 +1,7 @@
-import numpy as np
-import time
+import numpy as np 
+import helper
 
-
+@helper.timing
 def largest_prime_factor(n):
     """Compute largest prime factor of n"""
     def is_prime(x):
@@ -37,6 +37,4 @@ if __name__ == "__main__":
     assert largest_prime_factor(13) == 13
     print('Pass test')
 
-    start = time.perf_counter()
     print(largest_prime_factor(600851475143))
-    print('Elapsed time: {}s'.format(time.perf_counter() - start))
