@@ -3,6 +3,7 @@ import helper
 
 
 def like_prime(x):
+    """Check if x is likely a prime"""
     if x > 5:
         if x & 0x1 and x % 10 in [1, 3, 7, 9]:
             return True
@@ -13,6 +14,7 @@ def like_prime(x):
 
 @helper.timing
 def nth_prime(n):
+    """Compute n-th prime number"""
     def gen(lst, top):
         for item in lst:
             if item <= top+1:
@@ -25,6 +27,7 @@ def nth_prime(n):
     while len(primes) < n:
         x += 2
         xsq = int(math.sqrt(x))
+        # eliminate expensive loop if possible
         if like_prime(x):
             for p in gen(primes, xsq):
                 if x % p == 0:
