@@ -11,7 +11,7 @@ def sum_primes(top):
     topsq = int(np.sqrt(top)) + 1
     for x in range(bprime, topsq):
         if maskout.get(x, None) is None:
-            maskout.update([(i, True) for i in range(x*x, top, x) if i < top])
+            maskout.update([(i, True) for i in range(x*x, top, x)])
 
     ret = sum(x for x in range(bprime, top) if maskout.get(x, None) is None)
 
